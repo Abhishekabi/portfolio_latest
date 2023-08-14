@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@400&display=swap"); @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"); body {
+    margin: 0px;
+    line-height: normal;
+    font-family: var(--font-plus-jakarta-sans);
+    background-color: var(--color-background);
+    color: var(--color-primary);
+}
+
+:root {
+    --font-plus-jakarta-sans: "Plus Jakarta Sans";
+    --font-arial-hebrew: "Arial Hebrew";
+    --font-poppins: "Poppins";
+    --color-primary: #fff;
+    --color-secondary: #00fd65;
+    --color-background: #161616;
+    --color-icon-bg: #f1f1f1;
+    --color-black: #000;
+    --color-icon-clr: #454545;
+    --color-mode-switch: #5ed65c;
+}
+
+:root .light-mode {
+    --font-plus-jakarta-sans: "Plus Jakarta Sans";
+    --font-arial-hebrew: "Arial Hebrew";
+    --font-poppins: "Poppins";
+    --color-primary: #414141;
+    --color-secondary: #482384;
+    --color-background: #ffffff;
+    --color-icon-bg: #f1f1f1;
+    --color-black: #000;
+    --color-icon-clr: #454545;
+    --color-mode-switch: #454545;
+}
+
+.container-wrapper {
+    height: 100vH;
+    width: 100%;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+}
+
+.main-projects-cnt {
+    height: 100vH;
+}
+
+.nav-header {
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    flex-flow: wrap;
+    position: fixed;
+    align-items: flex-start;
+    padding: 4vh 0 2vH 0;
+    background-color: var(--color-background);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nav-items {
+    display: flex;
+    flex-flow: wrap;
+    width: 410px;
+    justify-content: space-between;
+}
+
+.nav-item {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.nav-item::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: var(--color-primary);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0px;
+}
+
+.nav-item:hover::after {
+    width: 60%;
+}
+
+.decor-item-top {
+    position: fixed;
+    right: 90px;
+    top: 0px;
+}
+
+.main-img-cnt > img {
+    width: 1080px;
+    object-fit: cover;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-poppins);
+    line-height: 5rem;
+    margin-bottom: 30px;
+}
+
+.main-header .welcome-txt {
+    font-size: 34px;
+}
+
+.main-cnt .user-name {
+    color: var(--color-secondary);
+    font-size: 114px;
+    text-transform: uppercase;
+}
+
+.main-cnt {
+    position: absolute;
+    left: 50%;
+    margin: 0px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.key-item {
+    width: 63px;
+    height: 61px;
+    background-color: var(--color-icon-bg);
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    cursor: pointer;
+}
+
+.key-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
+}
+
+.key-item svg {
+    fill: var(--color-icon-clr);
+}
+
+.key-item.github-icn {
+    top: 416px;
+    left: 435px;
+}
+
+.key-item.facebook-icn {
+    top: 416px;
+    left: 361px;
+}
+
+.key-item.twitter-icn {
+    top: 345px;
+    left: 417px;
+}
+
+.key-item.linkedin-icn {
+    top: 416px;
+    left: 729px;
+}
+
+.key-item.display-mode-icn {
+    top: 416px;
+    left: 12.9px;
+    width: 118px;
+}
+
+.key-item.display-mode-icn span {
+    color: var(--color-icon-clr);
+    position: absolute;
+    top: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.key-item.github-icn svg {
+    width: 40px;
+    height: 36px;
+    margin: 20%;
+}
+
+.key-item.facebook-icn svg {
+    width: 19px;
+    height: 35px;
+    margin: 20%;
+}
+
+.key-item.twitter-icn svg {
+    width: 34px;
+    height: 37px;
+    margin: 20%;
+}
+
+.key-item.linkedin-icn svg {
+    width: 31px;
+    height: 36px;
+    margin: 20%;
+}
+
+.key-item.display-mode-icn svg {
+    width: 30px;
+    position: absolute;
+    height: 36px;
+    margin: 12%;
+    left: 7px;
+}
+
+.key-item.github-icn:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+.key-item.github-icn:hover svg {
+    fill: rgb(255, 255, 255);
+}
+
+.key-item.facebook-icn:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.key-item.facebook-icn:hover svg {
+    fill: rgb(24, 119, 242);
+}
+
+.key-item.twitter-icn:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.key-item.twitter-icn:hover svg {
+    fill: rgb(29, 155, 240);
+}
+
+.key-item.linkedin-icn:hover {
+    background-color: rgb(10, 102, 194);
+}
+
+.key-item.linkedin-icn:hover svg {
+    fill: rgb(255, 255, 255);
+}
+
+.main-logo svg {
+    stroke: var(--color-secondary);
+}
+
+.mode-switch-indication {
+    position: absolute;
+    height: 9.52%;
+    width: 5.19%;
+    inset: 19.05% 84.42% 71.43% 10.39%;
+    border-radius: 50%;
+    background-color: var(--color-mode-switch);
+}
