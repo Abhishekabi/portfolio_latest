@@ -77,7 +77,7 @@ main {
 }
 
 .resume-container {
-    height: 92vH;
+    height: 88vH;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -333,9 +333,14 @@ main {
     cursor: pointer;
 }
 
-.project-tile.tile-header {
+.project-grid .tile-header {
     background: var(--color-project-title);
     position: relative;
+    border-radius: 12px;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 .project-switcher {
@@ -347,7 +352,7 @@ main {
     stroke: var(--color-project-title);
 }
 
-.project-tile.tile-header span {
+.project-grid .tile-header span {
     padding: 14px;
     font-size: 26px;
     writing-mode: vertical-rl;
@@ -601,4 +606,11 @@ main {
     padding: 15px 50px;
     border-radius: 16px;
     font-size: 15px;
+    font-weight: bold;
+}
+
+.copyright-text {
+    padding: 30px;
+    font-size: 16px;
+    opacity: 0.6;
 }
